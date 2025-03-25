@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+:root {
+  --primary-color: #B71C1C; /* Цвет из твоего изображения */
+  --primary-text-color: white;
+}
+
+.navbar {
+  background-color: var(--primary-color) !important;
+  color: var(--primary-text-color) !important;
+}
+
+.navbar .mat-button {
+  color: var(--primary-text-color) !important;
+}
+
+.navbar .mat-button:hover {
+  background-color: #9A1313 !important; /* Чуть темнее для эффекта наведения */
+}
+
