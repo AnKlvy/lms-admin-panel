@@ -24,6 +24,7 @@ import { PostTeacherComponent } from './admin-components/post-teacher/post-teach
 import { AllTeachersComponent } from './admin-components/all-teachers/all-teachers.component';
 import { AllStudentsComponent } from './admin-components/all-students/all-students.component';
 import { UpdateTeacherComponent } from './admin-components/update-teacher/update-teacher.component';
+import {MatIcon} from "@angular/material/icon";
 
 @NgModule({
   declarations: [
@@ -37,21 +38,22 @@ import { UpdateTeacherComponent } from './admin-components/update-teacher/update
     AllTeachersComponent,
     UpdateTeacherComponent
   ],
-  imports: [
-    CommonModule,
-    AdminRoutingModule,
-    HttpClientModule,
-    ReactiveFormsModule,
-    FormsModule,
-    MatProgressSpinnerModule,
-    MatInputModule,
-    MatFormFieldModule,
-    MatDatepickerModule,
-    MatButtonModule,
-    MatSelectModule,
-    MatNativeDateModule,
-    MatCardModule,
-    MatMenuModule
-  ]
+    imports: [
+        CommonModule,
+        AdminRoutingModule,
+        HttpClientModule,
+        ReactiveFormsModule,
+        FormsModule,
+        MatProgressSpinnerModule,
+        MatInputModule,
+        MatFormFieldModule,
+        MatDatepickerModule,
+        MatButtonModule,
+        MatSelectModule,
+        MatNativeDateModule,
+        MatCardModule,
+        MatMenuModule,
+        MatIcon
+    ]
 })
 export class AdminModule { }
