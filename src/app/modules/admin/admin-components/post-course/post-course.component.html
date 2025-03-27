@@ -1,0 +1,49 @@
+<div class="bg" style="margin-top: 150px;">
+  <mat-spinner *ngIf="isSpinning" [diameter]="50" class="spinner"></mat-spinner>
+  <div class="parent">
+    <div class="child">
+      <h1 class="form-title">Post Course</h1>
+      <form class="login-form" [formGroup]="validateForm">
+        <mat-form-field appearance="outline" class="form-field">
+          <mat-label>Title</mat-label>
+          <input matInput type="text" placeholder="Enter course title" formControlName="title"/>
+          <mat-error *ngIf="validateForm.get('title')?.hasError('required')">This input is required</mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="form-field">
+          <mat-label>Category</mat-label>
+          <input matInput type="text" placeholder="Enter category" formControlName="category"/>
+          <mat-error *ngIf="validateForm.get('category')?.hasError('required')">This input is required</mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="form-field">
+          <mat-label>Teacher</mat-label>
+          <input matInput type="text" placeholder="Enter teacher's name" formControlName="teacher"/>
+          <mat-error *ngIf="validateForm.get('teacher')?.hasError('required')">This input is required</mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="form-field">
+          <mat-label>Duration</mat-label>
+          <input matInput type="text" placeholder="Enter duration (e.g., 3 months)" formControlName="duration"/>
+          <mat-error *ngIf="validateForm.get('duration')?.hasError('required')">This input is required</mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="form-field">
+          <mat-label>Start Date</mat-label>
+          <input matInput [matDatepicker]="picker" placeholder="Choose a date" formControlName="startDate"/>
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+          <mat-error *ngIf="validateForm.get('startDate')?.hasError('required')">This input is required</mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="form-field">
+          <mat-label>Credits</mat-label>
+          <input matInput type="number" placeholder="Enter number of credits" formControlName="credits"/>
+          <mat-error *ngIf="validateForm.get('credits')?.hasError('required')">This input is required</mat-error>
+        </mat-form-field>
+
+        <button mat-raised-button color="primary" [disabled]="validateForm.invalid" (click)="postCourse()">Add Course</button>
+      </form>
+    </div>
+  </div>
+</div>

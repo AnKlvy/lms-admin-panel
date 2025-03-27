@@ -1,0 +1,94 @@
+.card-container {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding: 20px 10px; /* Добавлены отступы слева и справа */
+  white-space: nowrap;
+  scroll-behavior: smooth;
+
+
+  &::-webkit-scrollbar {
+    height: 8px;
+    width: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #B71C1C;
+    border-radius: 6px; // Закругление краёв ползунка
+    border: 2px solid transparent; // Добавляем отступы для эффекта скругления
+    background-clip: padding-box; // Обрезаем фон по границам
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;  // Убираем фон
+    margin: 40px;  // Убираем лишние отступы, чтобы не растягивался
+    display: block; // Не даем ему растягиваться по всей ширине
+  }
+}
+
+.course-card {
+  flex: 0 0 auto;
+  width: 300px;
+  margin-bottom: 16px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .mat-card-content,
+  .mat-card-actions {
+    background-color: white !important;
+    padding: 16px !important;
+    border-radius: 0 0 8px 8px !important;
+  }
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  background-color: #B71C1C;
+  color: white;
+  padding: 16px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+
+  mat-card-title,
+  mat-card-subtitle {
+    color: white;
+  }
+}
+
+.course-details {
+  padding: 16px;
+
+  p {
+    margin-bottom: 8px;
+  }
+}
+
+.mat-card-actions {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.category-header {
+  background-color: #B71C1C;
+  padding: 0px 0;
+  margin: 30px 0 10px; /* Добавили верхний отступ */
+  text-align: center;
+}
+
+.category-header h2 {
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 20px;
+  border-bottom: 3px solid white;
+}
+

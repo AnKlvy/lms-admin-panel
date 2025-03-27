@@ -11,6 +11,9 @@ import { PostTeacherComponent } from './admin-components/post-teacher/post-teach
 import { AllStudentsComponent } from './admin-components/all-students/all-students.component';
 import { AllTeachersComponent } from './admin-components/all-teachers/all-teachers.component';
 import { UpdateTeacherComponent } from './admin-components/update-teacher/update-teacher.component';
+import {AllCoursesComponent} from "./admin-components/all-courses/all-courses.component";
+import {PostCourseComponent} from "./admin-components/post-course/post-course.component";
+import {UpdateCourseComponent} from "./admin-components/update-course/update-course.component";
 
 const routes: Routes = [
   {path:"dashboard",component:DashboardComponent},//, canActivate:[adminGuard]
@@ -22,6 +25,9 @@ const routes: Routes = [
   {path:"teacher",component:PostTeacherComponent},//, canActivate:[adminGuard]
   {path:"teachers",component:AllTeachersComponent},//, canActivate:[adminGuard]
   {path:"teacher/:teacherId",component:UpdateTeacherComponent},//, canActivate:[adminGuard]
+  {path:"course",component:PostCourseComponent},//, canActivate:[adminGuard]
+  {path:"courses",component:AllCoursesComponent},//, canActivate:[adminGuard]
+  {path:"course/:courseId",component:UpdateCourseComponent},//, canActivate:[adminGuard]
 ];
 
 @NgModule({

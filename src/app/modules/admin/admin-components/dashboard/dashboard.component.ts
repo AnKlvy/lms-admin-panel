@@ -7,7 +7,7 @@ import {DashboardService} from "../../services/dashboard.service";
   styleUrl: './dashboard.component.scss'
 })
 export class DashboardComponent implements OnInit {
-  stats = { students: 0, teachers: 0, admins: 0 };
+  stats = { students: 0, teachers: 0, admins: 0, courses: 0 };
 
   constructor(private dashboardService: DashboardService) {}
 

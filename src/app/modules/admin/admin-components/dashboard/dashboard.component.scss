@@ -1,9 +1,13 @@
+.widgets-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-left: 20px; /* Сдвиг вправо */
+  margin-top: 20px; /* Сдвиг вниз */
+}
+
 .widget {
-  position: absolute;
-  left: 20px;
-  top: 100px; /* Сдвиг вниз */
-  width: 100%;
-  max-width: 320px;
+  width: 300px;
   padding: 15px;
   background: #fff;
   border-radius: 10px;
@@ -24,6 +28,7 @@ h2 {
 .stats-list li {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 8px;
   font-size: 16px;
   padding: 10px;
@@ -32,21 +37,11 @@ h2 {
   border-radius: 5px;
 }
 
+.stat-action {
+  margin-left: auto;
+}
+
 mat-icon {
   color: #d32f2f;
 }
 
-/* Адаптивность */
-@media (max-width: 768px) {
-  .widget {
-    position: relative;
-    left: auto;
-    top: auto;
-    margin: 10px auto;
-    width: 90%;
-  }
-}
-
-.stat-action {
-  margin-left: auto; /* Смещение вправо */
-}

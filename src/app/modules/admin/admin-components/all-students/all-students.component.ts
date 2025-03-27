@@ -10,52 +10,16 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 export class AllStudentsComponent {
 
   students = [
-    {
-      "id": 1,
-      "name": "John Doe",
-      "studentClass": "10A",
-      "email": "johndoe@example.com",
-      "address": "123 Main St, Springfield",
-      "birthDate": "2005-04-12",
-      "gender": "Male"
-    },
-    {
-      "id": 2,
-      "name": "Jane Smith",
-      "studentClass": "11B",
-      "email": "janesmith@example.com",
-      "address": "456 Elm St, Metropolis",
-      "birthDate": "2004-07-19",
-      "gender": "Female"
-    },
-    {
-      "id": 3,
-      "name": "Michael Johnson",
-      "studentClass": "12C",
-      "email": "michaelj@example.com",
-      "address": "789 Oak St, Gotham",
-      "birthDate": "2003-11-23",
-      "gender": "Male"
-    },
-    {
-      "id": 4,
-      "name": "Emily Davis",
-      "studentClass": "9D",
-      "email": "emilyd@example.com",
-      "address": "101 Pine St, Star City",
-      "birthDate": "2006-02-14",
-      "gender": "Female"
-    },
-    {
-      "id": 5,
-      "name": "David Brown",
-      "studentClass": "10A",
-      "email": "davidb@example.com",
-      "address": "202 Birch St, Central City",
-      "birthDate": "2005-08-30",
-      "gender": "Male"
-    }
+    { id: 1, name: "John Doe", studentClass: "10A", email: "johndoe@example.com", address: "123 Main St, Springfield", birthDate: "2005-04-12", gender: "Male" },
+    { id: 2, name: "Jane Smith", studentClass: "11B", email: "janesmith@example.com", address: "456 Elm St, Metropolis", birthDate: "2004-07-19", gender: "Female" },
+    { id: 3, name: "Michael Johnson", studentClass: "12C", email: "michaelj@example.com", address: "789 Oak St, Gotham", birthDate: "2003-11-23", gender: "Male" },
+    { id: 4, name: "Emily Davis", studentClass: "9D", email: "emilyd@example.com", address: "101 Pine St, Star City", birthDate: "2006-02-14", gender: "Female" },
+    { id: 5, name: "David Brown", studentClass: "10A", email: "davidb@example.com", address: "202 Birch St, Central City", birthDate: "2005-08-30", gender: "Male" },
+    { id: 6, name: "Olivia Wilson", studentClass: "11A", email: "oliviaw@example.com", address: "303 Maple St, Coast City", birthDate: "2004-05-21", gender: "Female" },
+    { id: 7, name: "William Martinez", studentClass: "12B", email: "williamm@example.com", address: "404 Cedar St, Keystone", birthDate: "2003-09-17", gender: "Male" },
+    //{ id: 8, name: "Sophia Anderson", studentClass: "9C", email: "sophiaa@example.com", address: "505 Walnut St, Blüdhaven", birthDate: "2006-12-05", gender: "Female" }
   ];
+
 
   constructor(private service: AdminService,
     private snackBar:MatSnackBar

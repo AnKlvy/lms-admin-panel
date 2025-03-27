@@ -17,7 +17,7 @@ export class AdminService {
     return this.http.post<[]>(BASIC_URL+"student",studentDto,{
       headers: this.createAuthorizationHeader(),
     });
-   
+
   }
 
   getAllStudents():Observable<any>{
@@ -31,7 +31,7 @@ export class AdminService {
       headers:this.createAuthorizationHeader()
     })
   }
-  
+
   getStudentById(studentId:any):Observable<any>{
     return this.http.get<[]>(BASIC_URL+`student/${studentId}`,{
       headers:this.createAuthorizationHeader()
@@ -85,7 +85,7 @@ export class AdminService {
       headers:this.createAuthorizationHeader(),
     });
   }
-  
+
 
   createAuthorizationHeader():HttpHeaders{
     let authHeaders: HttpHeaders = new HttpHeaders();
@@ -98,6 +98,36 @@ export class AdminService {
     return this.http.post<[]>(BASIC_URL+`fee/${studentId}`,feeDto,{
       headers: this.createAuthorizationHeader(),
     });
-   
+
+  }
+
+  getAllCourses() {
+    return this.http.get<[]>(BASIC_URL+"courses",{
+      headers:this.createAuthorizationHeader()
+    })
+  }
+
+  deleteCourse(courseId: number) {
+    return this.http.delete<[]>(BASIC_URL+`course/${courseId}`,{
+      headers:this.createAuthorizationHeader()
+    })
+  }
+
+  addCourse(courseDto:any):Observable<any> {
+    return this.http.post<[]>(BASIC_URL+"course",courseDto,{
+      headers: this.createAuthorizationHeader(),
+    });
+  }
+
+  getCourseById(courseId: number) {
+    return this.http.get<any>(BASIC_URL+`course/${courseId}`,{
+      headers:this.createAuthorizationHeader()
+    })
+  }
+
+  updateCourse(courseId: number, courseDto:any):Observable<any> {
+    return this.http.put<[]>(BASIC_URL+`course/${courseId}`,courseDto,{
+      headers:this.createAuthorizationHeader(),
+    });
   }
 }

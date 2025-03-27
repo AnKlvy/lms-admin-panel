@@ -1,27 +1,49 @@
-<div class="widget">
-  <h2>Общее количество пользователей</h2>
-  <ul class="stats-list">
-    <li>
-      <mat-icon>school</mat-icon>
-      <button mat-button routerLink="/admin/students" routerLinkActive="active">
-        <strong>Студенты:</strong> {{ stats.students }}
-      </button>
-      <button class="stat-action" mat-button routerLink="/admin/student" routerLinkActive="active">
-        <mat-icon>person_add</mat-icon>
-      </button>
-    </li>
-    <li>
-      <mat-icon>groups</mat-icon>
-      <button mat-button routerLink="/admin/teachers" routerLinkActive="active">
-        <strong>Преподаватели:</strong> {{ stats.teachers }}
-      </button>
-      <button class="stat-action" mat-button routerLink="/admin/teacher" routerLinkActive="active">
-        <mat-icon>person_add</mat-icon>
-      </button>
-    </li>
-    <li>
-      <mat-icon>admin_panel_settings</mat-icon>
-      <strong>Администраторы:</strong> {{ stats.admins }}
-    </li>
-  </ul>
+<div class="widgets-container">
+  <div class="widget">
+    <h2>Общее количество пользователей</h2>
+    <ul class="stats-list">
+      <li>
+        <mat-icon>school</mat-icon>
+        <button mat-button routerLink="/admin/students" routerLinkActive="active">
+          <strong>Студенты:</strong> {{ stats.students }}
+        </button>
+        <button class="stat-action" mat-button routerLink="/admin/student" routerLinkActive="active">
+          <mat-icon>person_add</mat-icon>
+        </button>
+      </li>
+      <li>
+        <mat-icon>groups</mat-icon>
+        <button mat-button routerLink="/admin/teachers" routerLinkActive="active">
+          <strong>Преподаватели:</strong> {{ stats.teachers }}
+        </button>
+        <button class="stat-action" mat-button routerLink="/admin/teacher" routerLinkActive="active">
+          <mat-icon>person_add</mat-icon>
+        </button>
+      </li>
+      <li>
+        <mat-icon>admin_panel_settings</mat-icon>
+        <button mat-button routerLink="/admin/admins" routerLinkActive="active">
+          <strong>Администраторы:</strong> {{ stats.admins }}
+        </button>
+        <button class="stat-action" mat-button routerLink="/admin/admin" routerLinkActive="active">
+          <mat-icon>person_add</mat-icon>
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h2>Курсы</h2>
+    <ul class="stats-list">
+      <li>
+        <mat-icon>menu_book</mat-icon>
+        <button mat-button routerLink="/admin/courses" routerLinkActive="active">
+          <strong>Курсы:</strong> {{ stats.courses }}
+        </button>
+        <button class="stat-action" mat-button routerLink="/admin/course" routerLinkActive="active">
+          <mat-icon>add_circle</mat-icon>
+        </button>
+      </li>
+    </ul>
+  </div>
 </div>

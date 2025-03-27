@@ -25,6 +25,9 @@ import { AllTeachersComponent } from './admin-components/all-teachers/all-teache
 import { AllStudentsComponent } from './admin-components/all-students/all-students.component';
 import { UpdateTeacherComponent } from './admin-components/update-teacher/update-teacher.component';
 import {MatIcon} from "@angular/material/icon";
+import { AllCoursesComponent } from './admin-components/all-courses/all-courses.component';
+import { PostCourseComponent } from './admin-components/post-course/post-course.component';
+import { UpdateCourseComponent } from './admin-components/update-course/update-course.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +39,10 @@ import {MatIcon} from "@angular/material/icon";
     AllPermitsComponent,
     PostTeacherComponent,
     AllTeachersComponent,
-    UpdateTeacherComponent
+    UpdateTeacherComponent,
+    AllCoursesComponent,
+    PostCourseComponent,
+    UpdateCourseComponent
   ],
     imports: [
         CommonModule,
