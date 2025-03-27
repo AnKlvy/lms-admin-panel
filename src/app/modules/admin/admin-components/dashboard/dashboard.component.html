@@ -5,7 +5,8 @@
       <li>
         <mat-icon>school</mat-icon>
         <button mat-button routerLink="/admin/students" routerLinkActive="active">
-          <strong>Студенты:</strong> {{ stats.students }}
+<!--          <strong>Студенты:</strong> {{ stats.students }}-->
+          <strong>Студенты:</strong> 3053
         </button>
         <button class="stat-action" mat-button routerLink="/admin/student" routerLinkActive="active">
           <mat-icon>person_add</mat-icon>
@@ -14,7 +15,8 @@
       <li>
         <mat-icon>groups</mat-icon>
         <button mat-button routerLink="/admin/teachers" routerLinkActive="active">
-          <strong>Преподаватели:</strong> {{ stats.teachers }}
+<!--          <strong>Преподаватели:</strong> {{ stats.teachers }}-->
+          <strong>Преподаватели:</strong> 52
         </button>
         <button class="stat-action" mat-button routerLink="/admin/teacher" routerLinkActive="active">
           <mat-icon>person_add</mat-icon>
@@ -23,7 +25,8 @@
       <li>
         <mat-icon>admin_panel_settings</mat-icon>
         <button mat-button routerLink="/admin/admins" routerLinkActive="active">
-          <strong>Администраторы:</strong> {{ stats.admins }}
+<!--          <strong>Администраторы:</strong> {{ stats.admins }}-->
+          <strong>Администраторы:</strong> 3
         </button>
         <button class="stat-action" mat-button routerLink="/admin/admin" routerLinkActive="active">
           <mat-icon>person_add</mat-icon>
@@ -38,9 +41,21 @@
       <li>
         <mat-icon>menu_book</mat-icon>
         <button mat-button routerLink="/admin/courses" routerLinkActive="active">
-          <strong>Курсы:</strong> {{ stats.courses }}
+<!--          <strong>Курсы:</strong> {{ stats.courses }}-->
+          <strong>Курсы:</strong> 133
         </button>
         <button class="stat-action" mat-button routerLink="/admin/course" routerLinkActive="active">
+          <mat-icon>add_circle</mat-icon>
+        </button>
+      </li>
+      <li>
+        <mat-icon>library_books</mat-icon>
+        <button mat-button routerLink="/admin/streams" routerLinkActive="active">
+<!--          <strong>Потоки:</strong> {{ stats.streams }}-->
+          <strong>Потоки:</strong> 3
+
+        </button>
+        <button class="stat-action" mat-button routerLink="/admin/stream" routerLinkActive="active">
           <mat-icon>add_circle</mat-icon>
         </button>
       </li>
